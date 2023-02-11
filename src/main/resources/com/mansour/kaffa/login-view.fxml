@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane nodeOrientation="RIGHT_TO_LEFT"  prefHeight="380.0" prefWidth="451.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+      fx:controller="com.mansour.kaffa.controller.LoginController">
+    <TextField fx:id="userNameInputFiled" layoutX="142.0" layoutY="123.0" prefHeight="36.0" prefWidth="218.0"
+               promptText="أسم المستخدم"/>
+    <PasswordField fx:id="passwordInputField" layoutX="142.0" layoutY="175.0" prefHeight="36.0" prefWidth="218.0"
+                   promptText="كلمة السر"/>
+    <Button layoutX="107.0" layoutY="250.0" onAction="#onHelloButtonClick" prefHeight="58.0" prefWidth="239.0"
+            text="تسجيل الدخول" textFill="#5d7586">
+        <font>
+            <Font name="System Bold" size="28.0"/>
+        </font>
+    </Button>
+    <ImageView fitHeight="36.0" fitWidth="34.0" layoutX="92.0" layoutY="176.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/key.png"/>
+    </ImageView>
+    <ImageView fitHeight="36.0" fitWidth="41.0" layoutX="91.0" layoutY="123.0" pickOnBounds="true" preserveRatio="true">
+        <Image url="@assets/user.png"/>
+    </ImageView>
+    <Label layoutX="13.0" layoutY="352.0" text="الحالة:" textFill="#615f5f"/>
+    <Label fx:id="statusLabel" layoutX="57.0" layoutY="352.0" text="فى انتظار تسجيل الدخول" textFill="#615f5f"/>
+    <Separator layoutX="8.0" layoutY="342.0" prefHeight="7.0" prefWidth="437.0"/>
+    <Label alignment="CENTER" layoutX="70.0" layoutY="37.0" prefHeight="34.0" prefWidth="312.0" text="مؤسسة كفاء وستر الخيرية"
+           textFill="#5d7586">
+        <font>
+            <Font name="Arial Bold" size="30.0"/>
+        </font>
+    </Label>
+    <Label layoutX="147.0" layoutY="73.0" text="" textFill="#a4a4a4">
+        <font>
+            <Font name="System Italic" size="12.0"/>
+        </font>
+    </Label>
+</Pane>
